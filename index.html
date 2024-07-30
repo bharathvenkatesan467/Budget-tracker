@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense calculator</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="javascript/javascript.js"></script>
+</head>
+<body>
+    <head>
+        <div class="d9"><h1>Add a new transaction:</h1></div>
+    </head>
+    <div class="d1">
+        <div class="d8">
+            <div class="d2">
+                <div class="d3">
+                    <label for="type" id="typename">Type:</label>
+                    <select id="type">
+                        <option>Choose one...</option>
+                        <option>Income</option>
+                        <option>Expense</option>
+                    </select>
+                </div>
+                <div class="d4">
+                    <label for="name" id="name1">Name:</label>
+                    <input type="text" id="name" >
+                </div>
+            </div>
+            <div class="d5">
+                <label for="amount" >Amount:</label>
+            <input type="text" id="amount">
+            </div><br>
+            <div class="d6">
+                <button type="submit" onclick="add()" id="submit" class="b1">Add to transactions</button>
+            </div>
+        </div>
+        <div class="d10">
+            <div class="d7">
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Options</th>
+                    </tr>
+                    <tr>
+                        <td id="d1"></td>
+                        <td id="d2"></td>
+                        <td id="d3"></td>
+                        <td id="d4"></td>
+                    </tr>
+    
+                </table>
+            </div>
+            <table id="tbl"></table>
+        </div>
+    </body>
+        </div>
+        
+</html>
