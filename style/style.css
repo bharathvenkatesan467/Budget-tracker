@@ -1,14 +1,19 @@
 head,h1{
-    background-color: #536493;
     top: 0;
     margin: 0;
     padding: 10px;
 
 }
 body{
-    background-color: #FFF1DB;
+    background-color:skyblue;
     text-align: center;
     font-size: larger;
+    margin-top: 100px;
+}
+.d8{
+    background-color: #FFF1DB;
+    padding: 20px;
+    border-radius: 10px;
 }
 .d2{
     display: flex;
@@ -18,7 +23,7 @@ body{
 }
 .d8{
     max-width: 500px;
-    margin: 80px auto;
+    margin: 0px auto;
 }
 .d5{
     margin:30px 0px 0px 220px;
@@ -31,7 +36,7 @@ body{
 .b1{
     margin: 30px 80px 0px 0px;
     padding: 10px 20px;
-    background-color: #536493;
+    background-color:#536493;
 }
 table,tr,th,td{
     border: 1px solid black;
@@ -49,7 +54,4 @@ table,th{
 }
 table,td{
     background-color: #FFF1DB;
-}
-.d10{
-    background-color: #536493;
 }
