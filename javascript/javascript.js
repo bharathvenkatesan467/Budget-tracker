@@ -3,18 +3,20 @@ function add() {
     const t1 = document.getElementById("type").value;
     const t2 = document.getElementById("name").value;
     const t3 = document.getElementById("amount").value;
-    console.log(t1);
-    console.log(t2);
-    console.log(t3);
+    const t4 = document.getElementById("transBody");
+    const row = document.createElement('tr');
+
+        row.innerHTML = `
+            <td>${t1}</td>
+            <td>${t2}</td>
+            <td>${t3}</td>
+            <td><button class="delete-btn">Delete</button></td>
+        `;
     
-    if (t1.length > 0 && t2.length > 0 && t3.length > 0) {
-        document.getElementById("d1").innerHTML += "<div class='task';'>"+t1+"</div>";
-        document.getElementById("d2").innerHTML += "<div class='task';'>"+t2+"</div>";
-        document.getElementById("d3").innerHTML += "<div class='task';'>"+t3+"</div>";
-        document.getElementById("d4").innerHTML += "<div class='task';'><button onclick='del(this)'>DELETE</button></div>";
+        t4.appendChild(row);
+    
+        row.querySelector('.delete-btn').addEventListener('click', function() {
+            row.remove();
+        });
+
     }
-    document.getElementById("type").value = "";
-}
-function del(element) {
-    element.parentElement.remove();
-}
